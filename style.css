@@ -5,6 +5,7 @@ maple leafs blue: #00205B;
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -47,6 +48,7 @@ h3 {
 
 .top {
     height: 35%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url(mapleLeafWhite.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(mapleLeafWhite.jpg);
     background-size: cover;
     background-position: center;
@@ -58,6 +60,7 @@ h3 {
     width: 400px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -122,6 +125,7 @@ h3 {
     padding: 10px 10px;
     margin-right: 10px;
     border-radius: 5px;
+    -webkit-transition: border 0.3s;
     transition: border 0.3s;
 }
 
@@ -139,6 +143,7 @@ h3 {
     margin-right: 10px;
     font-weight: 500;
     border-radius: 5px;
+    -webkit-transition: border 0.9s;
     transition: border 0.9s;
 }
 
@@ -173,7 +178,10 @@ h3 {
 
 .player__salary {
     float: left;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
     margin-right: 100px;
 }
 
@@ -197,6 +205,7 @@ h3 {
 }
 
 .player__delete__btn:active {
+    -webkit-transform: translateX(1.5px);
     transform: translateX(1.5px)
 }
 
@@ -236,6 +245,7 @@ h3 {
 }
 
 .player__list:hover .player__salary {
+    -webkit-transform: translateX(-20px);
     transform: translateX(-20px)
 }
 
@@ -256,6 +266,7 @@ h3 {
 }
 
 .add__btn:active {
+    -webkit-transform: translateX(1.5px);
     transform: translateX(1.5px);
 }
 
@@ -292,12 +303,14 @@ footer {
 
 .company__name {
     cursor: pointer;
+    -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
 }
 
 .company__name:hover {
     font-size: 102%;
     font-weight: 700;
+    -webkit-transition: font-size 0.5s;
     transition: font-size 0.5s;
 }
 
@@ -306,6 +319,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 10%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 135%;
     color: #00205B;

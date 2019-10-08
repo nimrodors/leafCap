@@ -36,6 +36,7 @@
     }
 
     .player__list:hover .player__salary {
+        -webkit-transform: translateX(-3px);
         transform: translateX(-3px)
     }
     
@@ -139,6 +140,7 @@
     }
 
     .player__list:hover .player__salary {
+        -webkit-transform: translateX(-5px);
         transform: translateX(-5px)
     }
 
@@ -162,11 +164,13 @@
         font-size: 90%;
         background: none;
         border: none;
+        -webkit-transition: font-size 0.5s;
         transition: font-size 0.5s;
     }
 
     #help__btn:hover {
         font-size: 120%;
+        -webkit-transition: font-size 0.5s;
         transition: font-size 0.5s;
         ;
     }
@@ -187,11 +191,15 @@
 
     .player__salary {
         float: left;
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: -webkit-transform 0.3s;
         transition: transform 0.3s;
+        transition: transform 0.3s, -webkit-transform 0.3s;
         margin-right: 70px;
     }
 
     .player__list:hover .player__salary {
+        -webkit-transform: translateX(1px);
         transform: translateX(1px)
     }
 
@@ -354,6 +362,7 @@
         padding: 10px 10px;
         margin-right: 1px;
         border-radius: 5px;
+        -webkit-transition: border 0.3s;
         transition: border 0.3s;
     }
 
@@ -386,6 +395,7 @@
     }
 
     .player__list:hover .player__salary {
+        -webkit-transform: translateX(-1px);
         transform: translateX(-1px)
     }
 
@@ -423,6 +433,7 @@
     .help {
         top: 50%;
         left: 15%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         font-size: 150%;
     }
@@ -544,6 +555,7 @@
         padding: 10px 10px;
         margin-right: 1px;
         border-radius: 5px;
+        -webkit-transition: border 0.3s;
         transition: border 0.3s;
     }
 
@@ -687,6 +699,7 @@
     .help {
         top: 50%;
         left: 15%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         font-size: 125%;
     }

@@ -34,11 +34,13 @@ maple leafs blue: #00205B;
     font-size: 100%;
     background: none;
     border: none;
+    -webkit-transition: font-size 0.5s;
     transition: font-size 0.5s;
 }
 
 #help__btn:hover {
     font-size: 120%;
+    -webkit-transition: font-size 0.5s;
     transition: font-size 0.5s;
     ;
 }
@@ -49,6 +51,7 @@ maple leafs blue: #00205B;
     float: right;
     font-size: 28px;
     font-weight: 700;
+    -webkit-transition: color 0.5s;
     transition: color 0.5s;
 
 }
@@ -58,6 +61,7 @@ maple leafs blue: #00205B;
     color: white;
     text-decoration: none;
     cursor: pointer;
+    -webkit-transition: color 0.5s;
     transition: color 0.5s;
 }
 
