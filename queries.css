@@ -1,0 +1,743 @@
+/*Big tablet to 1200px: (widths smaller that the 1140px row)*/
+@media only screen and (max-width: 1200px) {}
+
+/*********** - ************/
+/* ----- LOGO + CAP ----- */
+/*********** - ************/
+.logo__maple__leaf {
+    height: auto;
+    width: 33%;
+}
+
+.cap__upper__lower__money {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 105%;
+}
+
+
+/* Small tablet to big tablet: from 768 to 1023*/
+@media only screen and (max-width: 1023px) {
+
+    /*********** - ************/
+    /* ----- LOGO + CAP ----- */
+    /*********** - ************/
+    .logo__maple__leaf {
+        height: auto;
+        width: 31%;
+    }
+
+    /******************** - *********************/
+    /* ----- FORWARDS + DEFENSE + GOALIES ----- */
+    /******************** - *********************/
+
+    .player__salary {
+        margin-right: 40px;
+    }
+
+    .player__list:hover .player__salary {
+        transform: translateX(-3px)
+    }
+    
+    /**********************************/
+    /* -------- ERROR MASSEGE ------- */
+    /**********************************/
+
+    /*Missing Name and Salary*/
+
+    .missing__name_salary {
+        font-size: 120%;
+    }
+
+    .miss__name_salary {
+        margin-left: -8%;
+    }
+
+    /*Missing Name*/
+
+    .miss__name {
+        font-size: 120%;
+    }
+    
+    .name__error {
+        margin-left: 8%;
+    }
+
+    /*Missing Salary*/
+    
+    .miss__salary {
+        font-size: 120%;
+        margin-left: 0%;
+    }
+    
+    .salary__error {
+        margin-top: 35px;
+    }
+}
+
+/*Small phones to small tablets: from 610px to 767px */
+@media only screen and (max-width: 767px) {
+
+    /*********** - ************/
+    /* ----- LOGO + CAP ----- */
+    /*********** - ************/
+    .logo__maple__leaf {
+        height: auto;
+        width: 31%;
+    }
+
+    .cap__upper__lower__money {
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-size: 80%;
+    }
+
+    /************ - ************/
+    /* ------ CONTAINER ------ */
+    /*********** - *************/
+
+    .add__name,
+    .add__salary {
+        font-size: 14px;
+        padding: 10px 1px;
+        margin-right: 1px;
+    }
+
+    .add__player {
+        width: 23.5%;
+        height: 35px;
+    }
+
+    /*PLAYERS BASIC APPS*/
+
+    .forward__list,
+    .defense__list,
+    .goalie__list {
+        width: 70%;
+        margin-left: 12.5%;
+    }
+
+    /******************** - *********************/
+    /* ----- FORWARDS + DEFENSE + GOALIES ----- */
+    /******************** - *********************/
+
+    .player__title {
+        font-size: 100%
+    }
+
+    .goalie__list {
+        /*A goalie és a footer közti távolság*/
+        margin-bottom: 20%;
+    }
+
+    .player__salary {
+        margin-right: 30px;
+    }
+
+    .player__delete {
+        margin-top: -10px;
+    }
+
+    .player__list:hover .player__salary {
+        transform: translateX(-5px)
+    }
+
+    /***************************/
+    /* -------- FOOTER ------- */
+    /***************************/
+
+    .footer__title {
+        top: 30%;
+        left: 20%;
+        font-size: 92%;
+    }
+
+    /*HELP*/
+    .help {
+        font-size: 110%;
+    }
+
+    /*Modal Button*/
+    #help__btn {
+        font-size: 90%;
+        background: none;
+        border: none;
+        transition: font-size 0.5s;
+    }
+
+    #help__btn:hover {
+        font-size: 120%;
+        transition: font-size 0.5s;
+        ;
+    }
+
+    /****************************************/
+    /*--------------- SPAN -----------------*/
+    /****************************************/
+
+}
+
+/*from 500px to 610px*/
+@media only screen and (max-width: 610px) {
+
+    .add__name,
+    .add__salary {
+        width: 25%
+    }
+
+    .player__salary {
+        float: left;
+        transition: transform 0.3s;
+        margin-right: 70px;
+    }
+
+    .player__list:hover .player__salary {
+        transform: translateX(1px)
+    }
+
+    /*********** - ************/
+    /* ----- LOGO + CAP ----- */
+    /*********** - ************/
+
+    .logo {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /*********** - ************/
+    /* ----- Conatainer ----- */
+    /*********** - ************/
+
+    .add__player {
+        width: 20%;
+    }
+
+    .add__player:focus {
+        outline: none;
+        border: 1px solid #00205B;
+    }
+
+    /***************************/
+    /* -------- FOOTER ------- */
+    /***************************/
+
+    .footer__title {
+        font-size: 80%;
+    }
+
+    /*HELP */
+    .help {
+        font-size: 100%;
+    }
+
+    /*Help SPAN*/
+    span[help-title]:hover::before {
+        bottom: 22px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    /*Company Name & Salary SPAN*/
+    span[company-title]:hover::before,
+    span[salary-title]:hover::before {
+        bottom: 20px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    span[salary-title]:hover::before {
+        content: attr(salary-title);
+        bottom: 25px;
+    }
+
+    /**********************************/
+    /* -------- ERROR MASSEGE ------- */
+    /**********************************/
+
+    .name__error,
+    .salary__error,
+    .missing__name_salary {
+        font-size: 90%;
+    }
+
+    .salary__error {
+        margin-left: 56%;
+    }
+
+    .missing__name_salary {
+        margin-left: 41%;
+    }
+    
+    /**********************************/
+    /* -------- ERROR MASSEGE ------- */
+    /**********************************/
+
+    /*Missing Name and Salary*/
+
+    .missing__name_salary {
+        font-size: 110%;
+    }
+
+    .miss__name_salary {
+        margin-left: -8%;
+    }
+
+    /*Missing Name*/
+
+    .miss__name {
+        font-size: 110%;
+    }
+    
+    .name__error {
+        margin-left: 8%;
+    }
+
+    /*Missing Salary*/
+    
+    .miss__salary {
+        font-size: 110%;
+        margin-left: 3%;
+    }
+    
+    .salary__error {
+        margin-top: 35px;
+    }
+}
+
+/*Small phones: NEXUS5X, NEXUS6, NEXUS6P, NEXUS7, */
+/* ---- from 360 to 420px ---- */
+@media only screen and (max-width: 420px) {
+
+    /*********** - ************/
+    /* ----- LOGO + CAP ----- */
+    /*********** - ************/
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .logo__maple__leaf {
+        height: auto;
+        width: 21%;
+    }
+
+    .cap__upper__lower__money {
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-size: 80%;
+    }
+
+    .cap__limit__year {
+        font-size: 110%;
+    }
+
+    .cap__projected,
+    .cap__remaining {
+        font-size: 90%
+    }
+
+    /************ - ************/
+    /* ------ CONTAINER ------ */
+    /*********** - *************/
+    .add {
+        padding: 10px 0;
+    }
+
+    .add__name,
+    .add__salary {
+        border: 0;
+        background-color: #fff;
+        color: inherit;
+        font-family: inherit;
+        font-size: 16px;
+        padding: 10px 10px;
+        margin-right: 1px;
+        border-radius: 5px;
+        transition: border 0.3s;
+    }
+
+    .add__player {
+        width: 23.5%;
+        height: 35px;
+    }
+
+    .add__player:focus {
+        outline: none;
+        border: 1px solid #00205B;
+    }
+
+    /******************** - *********************/
+    /* ----- FORWARDS + DEFENSE + GOALIES ----- */
+    /******************** - *********************/
+
+    .player__goalies {
+        margin-left: 0%;
+        padding: 15px 0;
+    }
+
+    .player__forwards,
+    .player__defense {
+        padding: 15px 0;
+    }
+
+    .player__salary {
+        margin-right: 60px;
+    }
+
+    .player__list:hover .player__salary {
+        transform: translateX(-1px)
+    }
+
+    /* ----DELETE BUTTON ---- */
+
+    .player__delete__btn {
+        margin-top: 11px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 0;
+        color: #FF5049;
+        display: none;
+    }
+
+    /***************************/
+    /* -------- FOOTER ------- */
+    /***************************/
+
+    footer {
+        /*Ezt a mozgó footer miatt*/
+        height: 55px;
+        margin-top: 5%;
+    }
+
+    .footer__title {
+        padding-left: 0%;
+        margin-right: 5%;
+        font-size: 75%;
+    }
+
+    /*HELP */
+    .help {
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        font-size: 150%;
+    }
+
+    /*Help SPAN*/
+    span[help-title]:hover::before {
+        bottom: 35px;
+        font-size: 10px;
+        font-weight: 500;
+
+    }
+
+    /*Company Name & Salary SPAN*/
+    span[company-title]:hover::before,
+    span[salary-title]:hover::before {
+        bottom: 35px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    span[salary-title]:hover::before {
+        content: attr(salary-title);
+        bottom: 25px;
+        left: -40px;
+    }
+
+    /**********************************/
+    /* -------- ERROR MASSEGE ------- */
+    /**********************************/
+
+    /*Missing Name and Salary*/
+
+    .missing__name_salary {
+        margin-top: 35px;
+        font-size: 95%;
+    }
+
+    .miss__name_salary {
+        margin-left: -17%;
+    }
+
+    /*Missing Name*/
+
+    .miss__name {
+        font-size: 97%;
+
+    }
+    
+    .name__error {
+        margin-top: 35px;
+    }
+
+    /*Missing Salary*/
+    
+    .miss__salary {
+        font-size: 97%;
+        margin-left: -25%;
+    }
+    
+    .salary__error {
+        margin-top: 35px;
+    }
+
+}
+
+/*Small phones: NEXUS5X*/
+/* ---- from 320px to 360px ---- */
+
+@media only screen and (max-width: 360px) {
+    /*********** - ************/
+    /* ----- LOGO + CAP ----- */
+    /*********** - ************/
+
+    .cap__descreption {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 2px 0;
+    }
+
+    .logo__maple__leaf {
+        height: auto;
+        width: 21%;
+    }
+
+    .cap__upper__lower__money {
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-size: 80%;
+    }
+
+    .cap__limit__year {
+        font-size: 110%;
+    }
+
+    .cap__projected,
+    .cap__remaining {
+        font-size: 80%
+    }
+
+    /************ - ************/
+    /* ------ CONTAINER ------ */
+    /*********** - *************/
+
+    .container {
+        min-height: 72%;
+        margin-bottom: -50px;
+    }
+
+    .add {
+        padding: 8px 0;
+    }
+
+    .add__name,
+    .add__salary {
+        font-size: 14px;
+        padding: 10px 10px;
+        margin-right: 1px;
+        border-radius: 5px;
+        transition: border 0.3s;
+    }
+
+    .add__player {
+        width: 23.5%;
+        height: 30px;
+    }
+
+    .add__player:focus {
+        outline: none;
+        border: 1px solid #00205B;
+    }
+
+    .add__btn {
+        font-size: 30px;
+        line-height: 1.1;
+        margin-left: 5px;
+    }
+
+    /******************** - *********************/
+    /* ----- FORWARDS + DEFENSE + GOALIES ----- */
+    /******************** - *********************/
+    .goalie__list {
+        /*A goalie és a footer közti távolság*/
+        margin-bottom: 20%;
+    }
+
+    .player__title {
+        font-size: 120%
+    }
+
+    .player__salary {
+        margin-right: 60px;
+    }
+
+    /***************************/
+    /* -------- FOOTER ------- */
+    /***************************/
+
+    .footer__title {
+        padding-left: 0%;
+        margin-right: 5%;
+        font-size: 60%;
+    }
+
+    footer {
+        /*Ezt a mozgó footer miatt*/
+        height: 50px;
+    }
+
+    /**********************************/
+    /* -------- ERROR MASSEGE ------- */
+    /**********************************/
+
+    /*Missing Name and Salary*/
+
+    .missing__name_salary {
+        margin-top: 40px;
+        font-size: 95%;
+    }
+
+    .miss__name_salary {
+        margin-left: -13%;
+    }
+
+    /*Missing Name*/
+
+    .miss__name {
+        font-size: 95%;
+        margin-left: 0%;
+    }
+
+    /*Missing Salary*/
+    
+    .miss__salary {
+        font-size: 95%;
+        margin-left: -25%;
+    }
+
+}
+
+/*Small phones: NOKIA LUMNIA 520*/
+/* ---- from 0px to 320px ---- */
+
+@media only screen and (max-width: 320px) {
+
+    /*********** - ************/
+    /* ----- LOGO + CAP ----- */
+    /*********** - ************/
+
+    .cap__descreption {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 2px 0;
+    }
+
+    .logo__maple__leaf {
+        height: auto;
+        width: 16%;
+    }
+
+    .cap__upper__lower__money {
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-size: 70%;
+    }
+
+    .cap__limit__year {
+        font-weight: 900;
+        font-size: 95%;
+    }
+
+    .cap__projected,
+    .cap__remaining {
+        font-size: 75%
+    }
+
+    /*Player Title*/
+    .player__title {
+        font-size: 120%
+    }
+
+    /***************************/
+    /* -------- FOOTER ------- */
+    /***************************/
+
+    footer {
+        margin-top: 10%;
+    }
+
+    .footer__title {
+        padding-left: 10%;
+        margin-right: 15%;
+        font-size: 70%;
+    }
+
+    /*HELP */
+    .help {
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        font-size: 125%;
+    }
+
+    /*Help SPAN*/
+    span[help-title]:hover::before {
+        bottom: 30px;
+        font-size: 10px;
+        font-weight: 500;
+
+    }
+
+    /*Company Name & Salary SPAN*/
+    span[company-title]:hover::before,
+    span[salary-title]:hover::before {
+        bottom: 30px;
+        font-size: 10px;
+        font-weight: 200;
+        margin-left: -20px;
+    }
+
+    span[salary-title]:hover::before {
+        content: attr(salary-title);
+        bottom: 25px;
+    }
+
+    /**********************************/
+    /* -------- ERROR MASSEGE ------- */
+    /**********************************/
+
+    /*Missing Name and Salary*/
+
+    .missing__name_salary {
+        margin-top: 30px;
+    }
+
+    .miss__name_salary {
+        font-size: 90%;
+        margin-left: -13%;
+    }
+
+    /*Missing Name*/
+
+    .miss__name {
+        font-size: 90%;
+    }
+
+    /*Missing Salary*/
+    
+    .miss__salary {
+        font-size: 90%;
+        margin-left: -25%;
+    }
+}

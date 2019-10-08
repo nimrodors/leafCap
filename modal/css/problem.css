@@ -1,0 +1,24 @@
+.name__error,
+.salary__error,
+.missing__name_salary {
+    font-size: 100%;
+    color: #FF5049;
+    display: none;
+    position: absolute;
+    margin-top: 41px;
+    padding-top: 2px;
+    margin-left: 25.5%
+}
+
+.salary__error {
+    margin-left: 56%;
+}
+
+.missing__name_salary {
+    margin-left: 41%;
+}
+
+.red {
+    color: #FF5049 !important;
+}
+

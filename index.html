@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image/png" href="favicon.ico"/> -->
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="queries.css">
+    <link rel="stylesheet" type="text/css" href="modal/css/modal.css">
+    <!--<link rel="stylesheet" type="text/css" href="modal/css/problem.css">-->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>TML CAP</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/resources/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/resources/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="top">
+        <div class="cap">
+            <div class="logo">
+                <img class="logo__maple__leaf" src="toronto_maple_leafs.svg" alt="Toronto Maple Leafs" title="Toronto Maple Leafs">
+            </div>
+            <div class="cap__descreption">
+                <div class="cap__limit">
+                    <div class="cap__limit__year">
+                        2019 &mdash; 2020 CAP SPACE
+                    </div>
+                    <div class="cap__upper__lower__money">
+                        UPPER LIMIT: <span class="lower__money">+ $81.5M</span>
+                        |
+                        LOWER LIMIT: <span class="upper__money">+ $60.2M</span>
+                    </div>
+                </div>
+                <div class="cap__projected">
+                    <h4 class="cap__projected__tittle">PROJECTED CAP HIT :
+                        <span class="cap__projected__used__cap">+ $79,3</span>
+                    </h4>
+                </div>
+                <div class="cap__remaining">
+                    <h4 class="cap__remaining__tittle">PROJECTED CAP SPACE :
+                        <span class="cap__remaining__space">+ $2,2</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container clearfix">
+        <div class="add">
+            <div class="add__container">
+                <div class="miss__name">
+                    <p class="name__error">Missing or Incorrect name</p>
+                </div>
+                <div class="miss__salary">
+                    <p class="salary__error">Missing Payment/ or 0!</p>
+                </div>
+                <div class="miss__name_salary">
+                    <p class="missing__name_salary">Missing Name and Salary!</p>
+                </div>
+                <div class="wrong_salary">
+                    <p class="wrong__salary_number">Too Much Salary, Please Visit This Site: <a href="https://www.capfriendly.com/" target="_blank">CP</a></p>
+                </div>
+
+                <input type="text" class="add__name" placeholder="Name">
+                <select class="add__player">
+                    <option value="for" selected>Forward</option>
+                    <option value="def">Defense</option>
+                    <option value="goal">Goalie</option>
+                </select>
+                <span class="question" salary-title="Salary Format: 0.875 | 1.250 | 11.250">
+                    <i class="ion-ios-help question" alt="Tooltip"></i>
+                </span>
+                <input type="text" class="add__salary" placeholder="Salary">
+                <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+            </div>
+        </div>
+
+        <div class="player__container">
+            <div class="col span-1-of-2 player__forwards">
+
+                <p class="player__title">Forwards</p>
+                <div class="forward__list">
+                    <!--
+                <div class="player__list clearfix" id="income-0">
+                    <div class="player__name">Auston Matthews</div>
+                    <div class="right clearfix">
+                        <div class="player__salary">11,634,000</div>
+                        <div class="player__delete">
+                            <button class="player__delete__btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div>
+                </div>
+-->
+                </div>
+            </div>
+
+            <div class="col span-1-of-2 player__defense">
+
+                <p class="player__title">Defense</p>
+
+                <div class="defense__list">
+                    <!--               
+                 <div class="player__list clearfix" id="income-0">
+                    <div class="player__name">Jake Muzzin</div>
+                    <div class="right clearfix">
+                        <div class="player__salary">4,000,000</div>
+                        <div class="player__delete">
+                            <button class="player__delete__btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div>
+                </div>
+-->
+                </div>
+            </div>
+
+            <div class="col span-1-of-2 player__goalies">
+
+                <p class="player__title ">Goalies</p>
+
+                <div class="goalie__list">
+                    <!--                
+                 <div class="player__list clearfix" id="income-0">
+                    <div class="player__name">Frederik Andersen</div>
+                    <div class="right clearfix">
+                        <div class="player__salary">5,000,000</div>
+                        <div class="player__delete">
+                            <button class="player__delete__btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div>
+                </div>  
+-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer__content">
+            <div class="help">
+                <button id="help__btn">
+                    <span help-title="Help"><i class="ion-ios-help help__icon" alt="Tooltip"></i></span>
+                </button>
+            </div>
+            <!--
+            ITT HOZOM LÉTRE A POPUP ABLAKOT    
+-->
+            <div id="myModal" class="modal">
+                <div class="content">
+                    <span class="close">&times;</span>
+                    <p class="content__text">Build the Toronto Maple Leafs Team of the 2019/2020 season! Be the GM!</p><br>
+                    <p class="content__text">&bull; Be careful not to exceeded the cap space<br>(UPPER LIMIT: $ 81.5M)<br>
+                        &bull; Specify the players salary exactly (Please use the <span>?</span> icon):<br><br>
+                        &mdash; 0.850<br>
+                        &mdash; 1.350<br>
+                        &mdash; 12.780<br><br>
+                        There are currently no salaries in the NHL above 15 million so please Do not give irrelevant salaries!<br><br>
+                        &bull; Plese check for more information this site: <a href="https://www.capfriendly.com/" target="_blank">Capfriendly<br><br></a>
+                        &bull; Additional help with team formation. Please visit this site: <a href="https://www.capfriendly.com/armchair-gm" target="_blank">Capfriendly &ndash; ArmChair&ndash;GM</a><br><br>
+                        More news about the Maple Leafs<br><br>
+                        &bull; <a href="https://www.nhl.com/" target="_blank">NHL</a><br><br>
+                        &bull; <a href="https://mapleleafshotstove.com/" target="_blank">maple leaf <span style="color: orange">hot stove</span></a><br><br>
+                        &bull; <a href="https://editorinleaf.com/" target="_blank">Editor Leaf</a></p>
+                </div>
+                <!--
+                <div class="modal__content">
+                    <span class="close">&times;</span>
+                    <p class="modal__content__descriptoin">Toronto Maple leafs</p>
+                </div>
+-->
+            </div>
+
+            <p class="footer__title">
+                Copyright &copy; 2019 <span class="company__name" company-title="nimrodors@gmail.com">Maky &amp; Brumy Corporation.</span> All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="app.js"></script>
+    <script src="modal/js/modal.js"></script>
+</body></html>
+
+
+
+
+<!--
+<div class="maple__leaf--date">
+    Date <span class="maple--month">%Month%</span>
+</div>
+-->
