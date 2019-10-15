@@ -15,8 +15,27 @@
     font-size: 105%;
 }
 
+/***************************/
+/* -------- FOOTER ------- */
+/***************************/
 
-/* Small tablet to big tablet: from 768 to 1023*/
+.footer__title {
+    top: 16px;
+    left: 345px;
+    font-size: 125%;
+}
+
+/* ------- HELP -------*/
+.help {
+    font-size: 165%;
+}
+
+.question {
+    font-size: 130%;
+    margin-right: 2px;
+}
+
+/* Small tablet to big tablet: from 767 to 1023*/
 @media only screen and (max-width: 1023px) {
 
     /*********** - ************/
@@ -39,7 +58,7 @@
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px)
     }
-    
+
     /**********************************/
     /* -------- ERROR MASSEGE ------- */
     /**********************************/
@@ -59,20 +78,30 @@
     .miss__name {
         font-size: 120%;
     }
-    
+
     .name__error {
         margin-left: 8%;
     }
 
     /*Missing Salary*/
-    
+
     .miss__salary {
         font-size: 120%;
         margin-left: 0%;
     }
-    
+
     .salary__error {
         margin-top: 35px;
+    }
+
+    /***************************/
+    /* -------- FOOTER ------- */
+    /***************************/
+
+    .footer__title {
+        top: 16px;
+        left: 225px;
+        font-size: 102%;
     }
 }
 
@@ -275,7 +304,7 @@
     .missing__name_salary {
         margin-left: 41%;
     }
-    
+
     /**********************************/
     /* -------- ERROR MASSEGE ------- */
     /**********************************/
@@ -295,18 +324,18 @@
     .miss__name {
         font-size: 110%;
     }
-    
+
     .name__error {
         margin-left: 8%;
     }
 
     /*Missing Salary*/
-    
+
     .miss__salary {
         font-size: 110%;
         margin-left: 3%;
     }
-    
+
     .salary__error {
         margin-top: 35px;
     }
@@ -399,6 +428,11 @@
         transform: translateX(-1px)
     }
 
+    .question {
+        font-size: 100%;
+        margin-right: 2px;
+    }
+
     /* ----DELETE BUTTON ---- */
 
     .player__delete__btn {
@@ -435,7 +469,7 @@
         left: 15%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        font-size: 150%;
+        font-size: 100%;
     }
 
     /*Help SPAN*/
@@ -481,20 +515,28 @@
         font-size: 97%;
 
     }
-    
+
     .name__error {
         margin-top: 35px;
     }
 
     /*Missing Salary*/
-    
+
     .miss__salary {
         font-size: 97%;
         margin-left: -25%;
     }
-    
+
     .salary__error {
         margin-top: 35px;
+    }
+
+    /***************************************/
+    /* -------- MODAL CLOSE BUTTON ------- */
+    /***************************************/
+
+    span.close {
+        margin-left: 110%;
     }
 
 }
@@ -506,6 +548,10 @@
     /*********** - ************/
     /* ----- LOGO + CAP ----- */
     /*********** - ************/
+
+    .top {
+        width: 113%;
+    }
 
     .cap__descreption {
         text-align: center;
@@ -543,6 +589,7 @@
     .container {
         min-height: 72%;
         margin-bottom: -50px;
+        width: 113%;
     }
 
     .add {
@@ -575,6 +622,11 @@
         margin-left: 5px;
     }
 
+    .question {
+        font-size: 100%;
+        margin-right: 2px;
+    }
+
     /******************** - *********************/
     /* ----- FORWARDS + DEFENSE + GOALIES ----- */
     /******************** - *********************/
@@ -604,6 +656,16 @@
     footer {
         /*Ezt a mozgó footer miatt*/
         height: 50px;
+        width: 113%;
+    }
+
+    /*HELP */
+    .help {
+        top: 50%;
+        left: 15%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 100%;
     }
 
     /**********************************/
@@ -629,16 +691,34 @@
     }
 
     /*Missing Salary*/
-    
+
     .miss__salary {
         font-size: 95%;
         margin-left: -25%;
     }
 
+    /***************************************/
+    /* -------- MODAL CLOSE BUTTON ------- */
+    /***************************************/
+
+    .modal {
+        width: 100%;
+        height: 90%;
+    }
+
+    span.close {
+        color: #00205B;
+        margin-left: 100%;
+        font-size: 28px;
+        font-weight: 700;
+        -webkit-transition: color 0.5s;
+        transition: color 0.5s;
+    }
+
 }
 
 /*Small phones: NOKIA LUMNIA 520*/
-/* ---- from 0px to 320px ---- */
+/* ---- from 0px to 321px ---- */
 
 @media only screen and (max-width: 320px) {
 
@@ -681,6 +761,11 @@
         font-size: 120%
     }
 
+    .question {
+        font-size: 100%;
+        margin-right: 2px;
+    }
+
     /***************************/
     /* -------- FOOTER ------- */
     /***************************/
@@ -701,7 +786,7 @@
         left: 15%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        font-size: 125%;
+        font-size: 100%;
     }
 
     /*Help SPAN*/
@@ -748,7 +833,7 @@
     }
 
     /*Missing Salary*/
-    
+
     .miss__salary {
         font-size: 90%;
         margin-left: -25%;

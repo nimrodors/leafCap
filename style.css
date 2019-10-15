@@ -289,7 +289,7 @@ footer {
     text-align: center;
     border-top: 2px solid rgb(0, 32, 91);
     /*Ezt a mozgó footer miatt*/
-    height: 50px;
+    height: 60px;
 }
 
 .footer__title {

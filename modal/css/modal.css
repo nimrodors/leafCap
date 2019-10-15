@@ -48,12 +48,11 @@ maple leafs blue: #00205B;
 /* Close Button*/
 .close {
     color: #00205B;
-    float: right;
+    margin-left: 50%;
     font-size: 28px;
     font-weight: 700;
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
-
 }
 
 .close:hover,
@@ -97,56 +96,3 @@ maple leafs blue: #00205B;
 .content__text a {
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.modal__content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    width: 80%;
-}
-
-
-
-*/
