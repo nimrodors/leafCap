@@ -31,7 +31,7 @@ maple leafs blue: #00205B;
 
 /*Modal Button*/
 #help__btn {
-    font-size: 100%;
+    font-size: 80%;
     background: none;
     border: none;
     -webkit-transition: font-size 0.5s;
@@ -39,16 +39,13 @@ maple leafs blue: #00205B;
 }
 
 #help__btn:hover {
-    font-size: 120%;
-    -webkit-transition: font-size 0.5s;
-    transition: font-size 0.5s;
-    ;
+    cursor: pointer;
 }
 
 /* Close Button*/
 .close {
     color: #00205B;
-    margin-left: 50%;
+    float: right;
     font-size: 28px;
     font-weight: 700;
     -webkit-transition: color 0.5s;

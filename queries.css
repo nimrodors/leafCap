@@ -535,10 +535,6 @@
     /* -------- MODAL CLOSE BUTTON ------- */
     /***************************************/
 
-    span.close {
-        margin-left: 110%;
-    }
-
 }
 
 /*Small phones: NEXUS5X*/
@@ -705,16 +701,6 @@
         width: 100%;
         height: 90%;
     }
-
-    span.close {
-        color: #00205B;
-        margin-left: 100%;
-        font-size: 28px;
-        font-weight: 700;
-        -webkit-transition: color 0.5s;
-        transition: color 0.5s;
-    }
-
 }
 
 /*Small phones: NOKIA LUMNIA 520*/

@@ -289,16 +289,13 @@ footer {
     text-align: center;
     border-top: 2px solid rgb(0, 32, 91);
     /*Ezt a mozgó footer miatt*/
-    height: 60px;
+    height: 5%;
 }
 
 .footer__title {
     position: absolute;
-    top: 35%;
-    left: 50%;
     color: #00205B;
-    float: right;
-    margin-right: 5%;
+    margin-left: 34%;
 }
 
 .company__name {
@@ -306,19 +303,20 @@ footer {
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
 }
-
+/*
 .company__name:hover {
     font-size: 102%;
     font-weight: 700;
     -webkit-transition: font-size 0.5s;
     transition: font-size 0.5s;
 }
-
+*/
 /* ------- HELP -------*/
 .help {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 5%;
+    color: #00205B;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 135%;
